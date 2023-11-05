@@ -1,0 +1,725 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/styles.scss ***!
+  \***************************************************************************************************************/
+.float-container {
+  /* Create three equal columns that floats next to each other */
+  /* Left and right column */
+  /* Middle column */
+  /* Clear floats after the columns */
+  /* Style the footer */
+}
+.float-container * {
+  box-sizing: border-box;
+}
+.float-container .header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.float-container .column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.float-container .column.side {
+  width: 25%;
+}
+.float-container .column.middle {
+  width: 50%;
+}
+.float-container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.float-container .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .float-container .column {
+    width: 100%;
+  }
+  .float-container .column.side, .float-container .column.middle {
+    width: 100%;
+  }
+}
+
+.flexbox-container {
+  /* Container for flexboxes */
+  /* Create three equal columns that sits next to each other */
+  /* Left and right column */
+  /* Middle column */
+  /* Style the footer */
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+}
+.flexbox-container .header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.flexbox-container .row {
+  display: -webkit-flex;
+  display: flex;
+}
+.flexbox-container .column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.flexbox-container .column.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.flexbox-container .column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+.flexbox-container .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .flexbox-container .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "left left middle middle right right" "footer footer footer footer footer footer";
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+  /* Style the header */
+  /* Style the left column */
+  /* Style the middle column */
+  /* Style the right column */
+  /* Style the footer */
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+}
+.grid-container .header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.grid-container .left,
+.grid-container .middle,
+.grid-container .right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.grid-container .left {
+  grid-area: left;
+}
+.grid-container .middle {
+  grid-area: middle;
+}
+.grid-container .right {
+  grid-area: right;
+}
+.grid-container .footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .grid-container .grid-container {
+    grid-template-areas: "header header header header header header" "left left left left left left" "middle middle middle middle middle middle" "right right right right right right" "footer footer footer footer footer footer";
+  }
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas: "header header header header header header" "left middle middle middle right right" "footer footer footer footer footer footer";
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+  /* Style the header */
+  /* Style the left column */
+  /* Style the middle column */
+  /* Style the right column */
+  /* Style the footer */
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+}
+.grid-container2 .header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+.grid-container2 .left,
+.grid-container2 .middle,
+.grid-container2 .right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.grid-container2 .left {
+  grid-area: left;
+}
+.grid-container2 .middle {
+  grid-area: middle;
+}
+.grid-container2 .right {
+  grid-area: right;
+}
+.grid-container2 .footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .grid-container2 .grid-container {
+    grid-template-areas: "header header header header header header" "left left left left left left" "middle middle middle middle middle middle" "right right right right right right" "footer footer footer footer footer footer";
+  }
+}
+
+.topnav-content-footer {
+  /* Style the top navigation bar */
+  /* Style the topnav links */
+  /* Change color on hover */
+  /* Style the content */
+  /* Style the footer */
+}
+.topnav-content-footer * {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav-content-footer body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav-content-footer .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav-content-footer .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav-content-footer .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav-content-footer .content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+.topnav-content-footer .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.sidenav-content {
+  /* Style the side navigation */
+  /* Side navigation links */
+  /* Change color on hover */
+  /* Style the content */
+}
+.sidenav-content * {
+  box-sizing: border-box;
+}
+.sidenav-content body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidenav-content .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+.sidenav-content .sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+.sidenav-content .sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.sidenav-content .content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+
+.slideshow-container {
+  /* Slideshow container */
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+.slideshow-container * {
+  box-sizing: border-box;
+}
+.slideshow-container .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container .mySlides {
+  display: none;
+}
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slideshow-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.slideshow-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow-container .active, .slideshow-container .dot:hover {
+  background-color: #717171;
+}
+.slideshow-container .fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slideshow-gallery-container {
+  /* Position the image container (needed to position the left and right arrows) */
+  /* Hide the images by default */
+  /* Add a pointer when hovering over the thumbnail images */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Number text (1/3 etc) */
+  /* Container for image text */
+  /* Six columns side by side */
+  /* Add a transparency effect for thumnbail images */
+}
+.slideshow-gallery-container * {
+  box-sizing: border-box;
+}
+.slideshow-gallery-container .container {
+  position: relative;
+}
+.slideshow-gallery-container .mySlides {
+  display: none;
+}
+.slideshow-gallery-container .cursor {
+  cursor: pointer;
+}
+.slideshow-gallery-container .prev,
+.slideshow-gallery-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.slideshow-gallery-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-gallery-container .prev:hover,
+.slideshow-gallery-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.slideshow-gallery-container .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.slideshow-gallery-container .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.slideshow-gallery-container .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slideshow-gallery-container .column {
+  float: left;
+  width: 16.66%;
+}
+.slideshow-gallery-container .demo {
+  opacity: 0.6;
+}
+.slideshow-gallery-container .active,
+.slideshow-gallery-container .demo:hover {
+  opacity: 1;
+}
+
+.image-modal-container {
+  /* The Modal (background) */
+  /* Modal Content (image) */
+  /* Caption of Modal Image */
+  /* Add Animation */
+  /* The Close Button */
+  /* 100% Image Width on Smaller Screens */
+}
+.image-modal-container .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+.image-modal-container .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.image-modal-container #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.image-modal-container .modal-content, .image-modal-container #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.image-modal-container .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.image-modal-container .close:hover,
+.image-modal-container .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .image-modal-container .modal-content {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2fa8cc;
+}
+
+h3 {
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+
+img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.joke {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #2fa8cc;
+  color: #f4f4f4;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:focus {
+  outline: 0;
+}
+
+/* code start basic css */
+.test {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.test p {
+  text-align: justify;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* discovered new of text align last property */
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+/* text spacing example */
+/* The text-indent property is used to specify the indentation of the first line of a text: */
+/* The letter-spacing property is used to specify the space between the characters in a text. */
+/* The line-height property is used to specify the space between lines: */
+/* The word-spacing property is used to specify the space between the words in a text. */
+/* The white-space property specifies how white-space inside an element is handled. */
+/* text-shadow */
+/* text-shadow: 2px 2px 8px #FF0000; */
+/* positioning image inside a container */
+.img-container {
+  position: relative;
+}
+
+.img-text-topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.img-text-topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.img-text-bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.img-text-bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.img-text-topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.img-text-center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.img-demo {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+
+/* end position image inside a container */
+/* image with content in a box best practice */
+* .box-container {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+  max-width: 50%;
+  text-align: justify;
+}
+
+.box-container-img-right {
+  float: right;
+}
+
+.box-container-img-left {
+  float: left;
+}
+
+.box-container-clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* end image in a box with content */
+/* sticky navigation in adding top:0 position sticky */
+ul.sticky {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* end sticky navigation */
+/* dropdown button*/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* */
+
+/*# sourceMappingURL=main.css.map*/
